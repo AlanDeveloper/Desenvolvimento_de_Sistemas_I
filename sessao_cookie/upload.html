@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Glote</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Logotipo</li>
+            <li class="login"><a href="login.html" id="user">Entrar</a></li>
+        </ul>
+    </nav>
+    <form action="src/php/upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="fileUpload">
+        <input type="submit" value="Enviar">
+     </form>
+</body>
+</html>

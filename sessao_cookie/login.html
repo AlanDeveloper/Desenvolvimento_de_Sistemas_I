@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Glote</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Logotipo</li>
+            <li class="login"><a href="login.html">Entrar</a></li>
+        </ul>
+    </nav>
+    <form action="src/php/login.php" method="POST">
+        <div class="col">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" name="user">
+        </div>
+        <div class="col">
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="col">
+            <label for="password">Senha: </label>
+            <input type="password" id="password" name="password">
+        </div>
+        <input type="submit" id="submit" value="Registrar">
+    </form>
+    <script>
+        const input = document.querySelector('#submit');
+        const name = document.querySelector('#name');
+
+        input.addEventListener('click', () => {
+            sessionStorage.setItem('user', name.value);
+        });
+    </script>
+</body>
+</html>
