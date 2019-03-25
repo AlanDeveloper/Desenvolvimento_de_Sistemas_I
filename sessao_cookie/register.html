@@ -11,10 +11,10 @@
     <nav>
         <ul>
             <li>Logotipo</li>
-            <li class="login"><a href="login.html">Entrar</a></li>
+            <li class="register"><a href="register.html">Entrar</a></li>
         </ul>
     </nav>
-    <form action="src/php/login.php" method="POST">
+    <form action="src/php/register.php" method="POST">
         <div class="col">
             <label for="name">Nome: </label>
             <input type="text" id="name" name="user">
@@ -29,13 +29,5 @@
         </div>
         <input type="submit" id="submit" value="Registrar">
     </form>
-    <script>
-        const input = document.querySelector('#submit');
-        const name = document.querySelector('#name');
-
-        input.addEventListener('click', () => {
-            sessionStorage.setItem('user', name.value);
-        });
-    </script>
 </body>
 </html>
