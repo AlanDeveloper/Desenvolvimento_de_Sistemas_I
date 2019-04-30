@@ -2,6 +2,6 @@
 
 Usados:
 
-- Python
-- pgAdmin III
-- PostgresSQL
+- PHP
+- mySql
+- phpMyAdmin
