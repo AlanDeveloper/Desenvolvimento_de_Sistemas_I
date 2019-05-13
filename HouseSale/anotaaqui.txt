@@ -1,0 +1,37 @@
+Desenvolver um CRUD para acessar um banco de dados em mysql de apenas  uma tabela. Dados da tabela são:
+
+*Codigo da residencia
+
+*Descrição da residencia
+
+*Foto da residencia
+
+*Tipo_operação( venda ou aluguel)
+
+* bairro
+
+*preço de venda ou aluguel
+
+*Número de dormitórios (1 ou +
+
+Atualizar, inserir, remover, consultar, ou listar. Criar uma opção para o usuário listar TODAS as residencias em FPDF. 
+
+Consultar as residencias de acordo com os devidos critérios:
+
+Por bairro, por número de vagas, por tipo de operação ( aluguel ou venda), por bairro,  e finalmente por numero de dormitórios. A consulta deve ser combinada também, baseado no site http://www.procuraseimovel.com.br/portal/imoveis/rs/rio-grande
+
+Usar update https://www.codeigniter.com/user_guide/libraries/file_uploading.html
+
+Usar flashdata  https://www.codeigniter.com/user_guide/libraries/sessions.html
+
+Usar como referencia para banco de dados: https://www.codeigniter.com/userguide2/database/active_record.html
+
+Outra referencia de banco de dados https://itsolutionstuff.com/post/codeigniter-3-basic-crud-application-with-mysql-example-with-demoexample.html
+
+https://www.codeigniter.com/user_guide/database/query_builder.html?highlight=active
+
+https://www.codeigniter.com/userguide3/database/query_builder.html
+
+Usar redirect para redirecionamento adequado das páginas.
+
+Referências: https://www.dicascodeigniter.com.br/mini-crud-com-codeigniter-3-e-bootstrap/
