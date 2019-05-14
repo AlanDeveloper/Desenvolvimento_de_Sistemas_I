@@ -1,66 +1,64 @@
 <?php
     class House {
-        private $alocation;
-        private $ngborhood;
-        private $descript;
-        private $price;
-        private $operation;
-        private $codResidence;
-        private $pic;
         private $cod;
-
-        public function __construct($alocation, $ngborhood, $descript, $price, $operation, $codResidence, $pic = Null) {
-            $this->alocation = $alocation;
-            $this->ngborhood = $ngborhood;
-            $this->descript = $descript;
-            $this->price = $price;
-            $this->operation = $operation;
-            $this->codResidence = $codResidence;
+        private $desc;
+        private $pic;
+        private $oper;
+        private $ngbor;
+        private $price;
+        private $aloc;
+        public function __construct($cod ,$desc, $pic = NULL, $oper, $ngbor, $price, $aloc) {
+            $this->cod = $cod;
+            $this->desc = $desc;
             $this->pic = $pic;
+            $this->oper = $oper;
+            $this->ngbor = $ngbor;
+            $this->price = $price;
+            $this->aloc = $aloc;
         }
             
-        public function getAloc() {
-            return $this->alocation;
-        }
-        public function getNgBor() { 
-            return $this->ngborhood;
+        public function getCod() { 
+            return $this->cod;
         }
         public function getDesc() { 
-            return $this->descript;
+            return $this->desc;
+        }
+        public function getPic() { 
+            return $this->pic;
+        }
+        public function getOper() { 
+            return $this->oper;
+        }
+        public function getNgbor() { 
+            return $this->ngbor;
         }
         public function getPrice() { 
             return $this->price;
         }
-        public function getOper() { 
-            return $this->operation;
-        }
-        public function getCodRes() { 
-            return $this->codResidence;
-        }
-        public function getCodPic() { 
-            return $this->pic;
+        public function getAloc() { 
+            return $this->aloc;
         }
 
-        public function setAloc($aloc) { 
-            $this->aloc = $aloc;
+        public function setCod($value) { 
+            $this->cod = $value;
         }
-        public function setNgBor($ngbor) { 
-            $this->ngbor = $ngbor;
+        public function setDesc($value) { 
+            $this->desc = $value;
         }
-        public function setDesc($desc) { 
-            $this->desc = $desc;
+        public function setPic($value) { 
+            $this->pic = $value;
         }
-        public function setPrice($price) { 
-            $this->price = $price;
+        public function setOper($value) { 
+            $this->oper = $value;
         }
-        public function setOper($oper) { 
-            $this->oper = $oper;
+        public function setNgbor($value) { 
+            $this->ngbor = $value;
         }
-        public function setCodRes($codres) { 
-            $this->codres = $codres;
+        public function setPrice($value) { 
+            $this->price = $value;
         }
-        public function setCodPic($pic) {
-            $this->pic = $pic;
+        public function setAloc($value) { 
+            $this->aloc = $value;
         }
     }
 ?>

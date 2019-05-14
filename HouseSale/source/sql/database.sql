@@ -1,19 +1,15 @@
 CREATE DATABASE `work`;
 
 CREATE TABLE `HouseSale`(
-    `aloc` int NOT NULL,
-    `ngbor` varchar(500) NOT NULL,
+    `cod` int NOT NULL,
     `desc` varchar(1000) NOT NULL,
-    `price` int NOT NULL,
-    `oper` boolean NOT NULL,
-    `codRes` int NOT NULL,
     `pic` varchar(1000),
-    `cod` serial,
-    CONSTRAINT `vendaPK` PRIMARY KEY (`cod`)
+    `oper` boolean NOT NULL,
+    `ngbor` varchar(500) NOT NULL,
+    `price` float NOT NULL,
+    `aloc` int NOT NULL,
+    CONSTRAINT `housesalePK` PRIMARY KEY(`cod`)
 );
 
-
-SELECT * FROM `HouseSale`
-
-INSERT INTO `HouseSale` (`aloc`, `ngbor`, `desc`, `price`, `oper`, `codRes`) VALUES (3, "Cassino", "Lorem ipsum dolor sit amet consecte", 1400, 0, 1143)
-
+INSERT INTO `HouseSale`(`desc`, `pic`, `oper`, `ngbor`, `price`, `aloc`) VALUES ("Alan e narigudo", "www.com.br", 0, "Pais dos Nariz Grande", 10, 2);
+'UPDATE `HouseSale` SET desc = '.$house->getDesc().', pic = '.$house->getPic().', oper = '.$house->getOper().', ngbor = '.$house->getNgbor().', price = '.$house->getPrice().', aloc = '.$house->getAloc().' WHERE cod = '.$house->getCod
