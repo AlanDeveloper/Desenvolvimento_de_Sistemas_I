@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pesquisar</a></li>
+                <li><a href="searchManu.html">Pesquisar fabricante</a></li>
+                <li><a href="register.html" class="active">Cadastrar medicamento</a></li>
+                <li><a href="list.php">Medicamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form action="src/php/register.php" method="POST">
+            <ul class="list">
+                <li>
+                    <label for="name_medicament">Nome do medicamento: </label>
+                    <input type="text" id="name_medicament" name="name_medicament">
+                </li>
+                <li>
+                    <label for="name_manufacturer">Nome do fabricante: </label>
+                    <input type="text" id="name_manufacturer" name="name_manufacture">
+                </li>
+                <li>
+                    <label for="control">Controlado? </label>
+                    <select name="control" id="control">
+                        <option value="select">Selecione</option>
+                        <option value="yes">Sim</option>
+                        <option value="no">Não</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="amount">Quantidade: </label>
+                    <input type="number" id="amount" name="amount">
+                </li>
+                <li>
+                    <label for="price">Preço: </label>
+                    <input type="number" id="price" name="price">
+                </li>
+                <li>
+                    <input type="submit" value="Pronto!!!">
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>

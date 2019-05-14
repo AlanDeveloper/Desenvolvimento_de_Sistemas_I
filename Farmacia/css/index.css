@@ -1,0 +1,18 @@
+section { 
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.search {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.search input[type="submit"] {
+    padding: 4px 5px;
+}
+table {
+    margin: 10px auto;
+    padding: 10px;
+}

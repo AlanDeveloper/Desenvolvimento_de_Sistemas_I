@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header { 
+    box-shadow: 0 2px 4px 0 rgb(139,125,183);
+    background-color: #444A6D;
+    height: 120px;
+}
+header nav ul {
+    list-style: none;
+    float: right;
+    display: flex;
+}
+header nav ul li {
+    line-height: 50px;
+    margin-top: 40px;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+header nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+header nav ul li:hover {
+    transition: 0.5s;
+    transform: translateY(-15px);
+}
+header nav ul li a:hover {
+    background-color: rgba(139,125,183, 0.4);
+}
+.active {
+    background-color: rgba(139,125,183, 0.4);
+}

@@ -1,0 +1,36 @@
+section {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.list {
+    list-style: none;
+    text-align: center;
+}
+.list li {
+    margin: 30px auto;
+    max-width: 700px;
+    position: relative;
+    clear: both;
+    text-align: left;
+}
+.list li label { 
+    line-height: 20px;
+}
+
+.list li input, .list li select {
+    position: relative;
+    top: -7px;
+    width: 200px;
+    float: right;
+    padding: 5px 10px;
+}
+.list li select {
+    width: 238px;
+}
+.list li input[type="submit"] {
+    width: 100px;
+    padding: 10px 5px;
+}
